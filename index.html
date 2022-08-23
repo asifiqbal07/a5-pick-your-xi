@@ -24,7 +24,7 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-neymar" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
@@ -33,7 +33,7 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-cr-7" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
@@ -42,12 +42,11 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-mbappe" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="overflow-x-auto bg-teal-900 p-8 px-8">
                 <table class="table w-full">
-                    <!-- head -->
                     <thead class="">
                         <tr>
                             <th> </th>
@@ -68,7 +67,7 @@
                 <h4 class="text-2xl font-semibold p-2">Sergio Ramos</h4>
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div><button id="btn-ramos" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
@@ -77,7 +76,7 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-luka" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
@@ -86,30 +85,32 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-robert" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
-            <div class="flex flex-col items-center bg-teal-900">
-                <h3 class="text-2xl font-semibold  text-center mt-6 text-white">Budget</h3>
+            <div class="bg-teal-900">
+                <h3 class="text-2xl font-semibold  text-center my-6 text-white">Budget</h3>
                 <div class="flex flex-col items-center ">
-                    <div class="flex mt-4">
+                    <div class="flex">
                         <h4 class="text-white text-medium ml-4">Per Player</h4>
                         <input id="per-player" class="block mb-4 p-1 ml-4 w-7/12" type="email" name=""
                             placeholder="$Amount">
                     </div>
-                    <button id="btn-calculate"
-                        class="bg-white px-12 mt-1 py-2 font-medium rounded-md block hover:text-teal-900 text-black">Calculate</button>
+                    <div>
+                        <button id="btn-calculate"
+                            class="bg-white px-9 mt-2 py-2 font-medium rounded-md block hover:text-teal-900 text-black mx-4">Calculate</button>
+                    </div>
                 </div>
                 <div>
-                    <div class="flex justify-between mt-4">
+                    <div class="flex justify-between mt-8">
                         <div class="">
-                            <h4 class="text-white text-medium px-4">Player Expenses</h4>
+                            <h4 class="text-white font-bold px-4">Player Expenses</h4>
                         </div>
                         <div class="">
-                            <h4 class="text-white text-medium px-4">$<span id="player-expenses">000</span></h4>
+                            <h4 class="text-white text-medium px-4 font-bold">$<span id="player-expenses">000</span></h4>
                         </div>
                     </div>
-                    <div class="flex flex-col item center">
+                    <div class="flex flex-col item-center mt-6">
                         <div>
                             <div class="flex justify-between mt-4">
                                 <h4 class="text-white text-medium ml-4">Manager</h4>
@@ -122,13 +123,15 @@
                                     placeholder="$Amount">
                             </div>
                         </div>
-                        <button id="btn-total-calculate"
-                            class="bg-white px-12 mt-1 py-2 font-medium rounded-md block hover:text-teal-900 text-black mx-4">Calculate
-                            Total</button>
+                        <div>
+                            <button id="btn-total-calculate"
+                                class="bg-white px-4 mt-2 py-2 mx-20 font-medium rounded-md text-center hover:text-teal-900 text-black mx-4">Calculate
+                                Total</button>
+                        </div>
                     </div>
                     <div class="flex justify-between mt-4">
-                        <h4 class="text-white text-medium px-4">Total</h4>
-                        <h4 class="text-white text-medium px-4">$<span id="total-expenses">0000</span></h4>
+                        <h4 class="text-white text-medium px-4 font-bold">Total</h4>
+                        <h4 class="text-white text-medium px-4 font-bold">$<span id="total-expenses">0000</span></h4>
 
                     </div>
                 </div>
@@ -139,7 +142,7 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-mario" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
@@ -148,7 +151,7 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-salah" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
@@ -157,11 +160,11 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-zlatan" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="">
-                <!-- dfsdf -->
+                
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
                 <img class="h-5/6" src="images/Alisson Becker.jpg" alt="">
@@ -169,7 +172,7 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-becker" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
@@ -178,7 +181,7 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-mane" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
@@ -187,11 +190,11 @@
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
                     <button id="btn-karim" onclick="selectPlayer(this)"
-                        class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+                        class="bg-teal-900 px-6 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="">
-                <!-- adasd -->
+                
             </div>
         </section>
     </main>

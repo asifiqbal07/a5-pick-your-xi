@@ -8,7 +8,11 @@ function display(selectedPlayers) {
 
     for (let i = 0; i < selectedPlayers.length; i++) {
 
-        // console.log(selectedPlayers[i]);}
+        // 5 player select alert
+        
+        if (i >= 4) {
+            alert('You can not select more than 5');
+        }
         const clickedPlayerName = selectedPlayers[i].playerName
         const tr = document.createElement("tr");
 
@@ -24,8 +28,7 @@ function display(selectedPlayers) {
 
 
 function selectPlayer(element) {
-    // console.log(element.parentNode.parentNode.children)
-    // console.log(element.parentNode.parentNode.children[01].innerText)
+
 
     const playerName = element.parentNode.parentNode.children[01].innerText;
 
@@ -39,13 +42,3 @@ function selectPlayer(element) {
 
     display(selectedPlayers);
 }
-
-// const button = document.querySelector('#button');
-
-// const disableButton = () => {
-//   console.log("va");
-//     button.disabled = true;
-
-// };
-
-// button.addEventListener('click', disableButton);

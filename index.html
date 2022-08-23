@@ -45,20 +45,20 @@
                         class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto bg-teal-900 p-8 px-8">
                 <table class="table w-full">
                     <!-- head -->
-                    <thead>
+                    <thead class="">
                         <tr>
-                            <th></th>
-                            <h3 class="text-2xl font-semibold p-2 text-center mt-2">Selected - V</h1>
+                            <th> </th>
+                            <h3 class="text-2xl font-semibold  text-center mt-2 text-white">Selected - V</h1>
                         </tr>
                     </thead>
-                    <tbody id="selected-v">
+                    <tbody id="selected-v" class="text-white py-8">
                         <tr>
-                            <th>1</th>
-                            <td>Cy Ganderton</td>
-                    
+                            <th></th>
+                            <td></td>
+
                         </tr>
                     </tbody>
                 </table>
@@ -82,15 +82,54 @@
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
                 <img class="h-5/6" src="images/Lewandowski.jpg" alt="">
-                <h4 class="text-2xl font-semibold p-2">Lewandowski</h4>
+                <h4 class="text-2xl font-semibold p-2">Robert Lewandowski</h4>
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
-                    <button id="btn-wski" onclick="selectPlayer(this)"
+                    <button id="btn-robert" onclick="selectPlayer(this)"
                         class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
-            <div class="flex flex-col items-center border-2 border-teal-900">
-                <!-- adas -->
+            <div class="flex flex-col items-center bg-teal-900">
+                <h3 class="text-2xl font-semibold  text-center mt-6 text-white">Budget</h3>
+                <div class="flex flex-col items-center ">
+                    <div class="flex mt-4">
+                        <h4 class="text-white text-medium ml-4">Per Player</h4>
+                        <input id="deposit" class="block mb-4 p-1 ml-4 w-7/12" type="email" name=""
+                            placeholder="$Amount">
+                    </div>
+                    <button id="btn-deposit"
+                        class="bg-white px-12 mt-1 py-2 font-medium rounded-md block hover:text-teal-900 text-black">Deposit</button>
+                </div>
+                <div>
+                    <div class="flex justify-items-stretch mt-4">
+                        <div class="">
+                            <h4 class="text-white text-medium ">Per Player</h4>
+                        </div>
+                        <div class="">
+                            <h4 class="text-white text-medium">Per Player</h4>
+                        </div>
+                    </div>
+                    <div class="flex mt-4">
+                        <h4 class="text-white text-medium ml-4">Manager</h4>
+                        <input id="deposit" class="block mb-4 p-1 ml-4 w-7/12" type="email" name=""
+                            placeholder="$Amount">
+                    </div>
+                    <div class="flex mt-2">
+                        <h4 class="text-white text-medium ml-4">Coach</h4>
+                        <input id="deposit" class="block mb-4 p-1 ml-4 w-7/12" type="email" name=""
+                            placeholder="$Amount">
+                    </div>
+                    <button id="btn-deposit"
+                        class="bg-white px-12 mt-1 py-2 font-medium rounded-md block hover:text-teal-900 text-black">Deposit</button>
+                    <div class="flex justify-items-stretch mt-4">
+                        <div class="">
+                            <h4 class="text-white text-medium ">Per Player</h4>
+                        </div>
+                        <div class="">
+                            <h4 class="text-white text-medium">Per Player</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
                 <img class="h-5/6" src="images/mario.jpg" alt="">
@@ -102,54 +141,54 @@
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
-                <img class="h-5/6" src="images/neymar.jpg" alt="">
-                <h4 class="text-2xl font-semibold p-2">Neymar JR</h4>
+                <img class="h-5/6" src="images/Mohamed Salah.jpg" alt="">
+                <h4 class="text-2xl font-semibold p-2">Mohamed Salah</h4>
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
-                    <button id="btn-neymar" onclick="selectPlayer(this)"
+                    <button id="btn-salah" onclick="selectPlayer(this)"
                         class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
-                <img class="h-5/6" src="images/cr-7.jpg" alt="">
-                <h4 class="text-2xl font-semibold p-2">Cristiano Ronaldo</h4>
+                <img class="h-5/6" src="images/Zlatan Ibrahimović.jpg" alt="">
+                <h4 class="text-2xl font-semibold p-2">Zlatan Ibrahimović</h4>
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
-                    <button id="btn-cr-7" onclick="selectPlayer(this)"
+                    <button id="btn-zlatan" onclick="selectPlayer(this)"
                         class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
-            <div class="flex flex-col items-center border-2 border-teal-900">
+            <div class="">
                 <!-- dfsdf -->
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
-                <img class="h-5/6" src="images/mario.jpg" alt="">
-                <h4 class="text-2xl font-semibold p-2">Mario Götze</h4>
+                <img class="h-5/6" src="images/Alisson Becker.jpg" alt="">
+                <h4 class="text-2xl font-semibold p-2">Alisson Becker</h4>
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
-                    <button id="btn-mario" onclick="selectPlayer(this)"
+                    <button id="btn-becker" onclick="selectPlayer(this)"
                         class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
-                <img class="h-5/6" src="images/Sergio Ramos.jpg" alt="">
-                <h4 class="text-2xl font-semibold p-2">Sergio Ramos</h4>
+                <img class="h-5/6" src="images/Sadio Mané.jpg" alt="">
+                <h4 class="text-2xl font-semibold p-2">Sadio Mané</h4>
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
-                    <button id="btn-ramos" onclick="selectPlayer(this)"
+                    <button id="btn-mane" onclick="selectPlayer(this)"
                         class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
             <div class="flex flex-col items-center border-2 border-teal-900">
-                <img class="h-5/6" src="images/Luka_Modric_Croatia.jpg" alt="">
-                <h4 class="text-2xl font-semibold p-2">Luka Modric</h4>
+                <img class="h-5/6" src="images/Karim Benzema.jpg" alt="">
+                <h4 class="text-2xl font-semibold p-2">Karim Benzema</h4>
                 <p class="pb-2">36 Goals | 120 Assist.</p>
                 <div>
-                    <button id="btn-luka" onclick="selectPlayer(this)"
+                    <button id="btn-karim" onclick="selectPlayer(this)"
                         class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
                 </div>
             </div>
-            <div class="flex flex-col items-center border-2 border-teal-900">
+            <div class="">
                 <!-- adasd -->
             </div>
         </section>

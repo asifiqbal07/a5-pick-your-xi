@@ -98,36 +98,38 @@
                             placeholder="$Amount">
                     </div>
                     <button id="btn-deposit"
-                        class="bg-white px-12 mt-1 py-2 font-medium rounded-md block hover:text-teal-900 text-black">Deposit</button>
+                        class="bg-white px-12 mt-1 py-2 font-medium rounded-md block hover:text-teal-900 text-black">Calculate</button>
                 </div>
                 <div>
-                    <div class="flex justify-items-stretch mt-4">
+                    <div class="flex justify-between mt-4">
                         <div class="">
-                            <h4 class="text-white text-medium ">Per Player</h4>
+                            <h4 class="text-white text-medium px-4">Player Expenses</h4>
                         </div>
                         <div class="">
-                            <h4 class="text-white text-medium">Per Player</h4>
+                            <h4 class="text-white text-medium px-4">$<span id="player-expenses">000</span></h4>
                         </div>
                     </div>
-                    <div class="flex mt-4">
-                        <h4 class="text-white text-medium ml-4">Manager</h4>
-                        <input id="deposit" class="block mb-4 p-1 ml-4 w-7/12" type="email" name=""
-                            placeholder="$Amount">
-                    </div>
-                    <div class="flex mt-2">
-                        <h4 class="text-white text-medium ml-4">Coach</h4>
-                        <input id="deposit" class="block mb-4 p-1 ml-4 w-7/12" type="email" name=""
-                            placeholder="$Amount">
-                    </div>
-                    <button id="btn-deposit"
-                        class="bg-white px-12 mt-1 py-2 font-medium rounded-md block hover:text-teal-900 text-black">Deposit</button>
-                    <div class="flex justify-items-stretch mt-4">
-                        <div class="">
-                            <h4 class="text-white text-medium ">Per Player</h4>
+                    <div class="flex flex-col item center">
+                        <div>
+                            <div class="flex justify-between mt-4">
+                                <h4 class="text-white text-medium ml-4">Manager</h4>
+                                <input id="deposit" class="block mb-4 p-1 ml-4 w-7/12 mx-4" type="email" name=""
+                                    placeholder="$Amount">
+                            </div>
+                            <div class="flex justify-between mt-2 ">
+                                <h4 class="text-white text-medium ml-4">Coach</h4>
+                                <input id="deposit" class="block mb-4 p-1 ml-4 w-7/12 mx-4" type="email" name=""
+                                    placeholder="$Amount">
+                            </div>
                         </div>
-                        <div class="">
-                            <h4 class="text-white text-medium">Per Player</h4>
-                        </div>
+                        <button id="btn-deposit"
+                            class="bg-white px-12 mt-1 py-2 font-medium rounded-md block hover:text-teal-900 text-black mx-4">Calculate
+                            Total</button>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <h4 class="text-white text-medium px-4">Total</h4>
+                        <h4 class="text-white text-medium px-4">$<span id="total">0000</span></h4>
+
                     </div>
                 </div>
             </div>
